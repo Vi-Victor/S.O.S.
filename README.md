@@ -1,6 +1,7 @@
 # S.O.S.
 
 _S.O.S._ is a (WIP) game. [Play it here!] (https://vi-victor.github.io/S.O.S./)
+
 (requires a browser with PointerLock API support, like Chrome)
 
 It stands for "Sounds Of Space", and is meant to convey feelings of loneliness, isolation, and a desire to explore. Currently, it consists of a space-like environment with a few UI elements tied to a somewhat randomly arranged set of 4 synthesizers, each with their own sequence.
