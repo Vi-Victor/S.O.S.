@@ -10,5 +10,7 @@ In any case, I was capable of making something that, at the minimum, expressed t
 
 ### libraries / frameworks / other people's code
 -Three.js
+
 -PointerLockControls.js for camera controls, from the Three.js examples.
+
 -Tone.js for audio synthesis and interactive audio manipulation
