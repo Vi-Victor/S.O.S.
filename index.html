@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>SOS</title>
+
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            background-color: #000;
+            margin: 0;
+            overflow: hidden;
+            font-family: arial;
+        }
+        #blocker {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        #instructions {
+            width: 100%;
+            height: 100%;
+            display: -webkit-box;
+            display: -moz-box;
+            display: box;
+            -moz-box-orient: horizontal;
+            box-orient: horizontal;
+            -webkit-box-pack: center;
+            -moz-box-pack: center;
+            box-pack: center;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            box-align: center;
+            color: #ffffff;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #reticle {
+            position: fixed;
+            width: 4px;
+            height: 4px;
+            top: 50%;
+            left: 50%;
+            margin-top: -2px;
+            margin-left: -2px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- pause mode screen -->
+    <div id="blocker">
+        <div id="instructions">
+            <span style="font-size:40px">SOS</span>
+            <br>
+            <br>
+            MOUSE = LOOK
+        </div>
+    </div>
+
+    <!-- reticle (dot in middle of screen) -->
+    <div id="reticle">
+    </div>
+
+    <!-- audio and video libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/threejs/r76/three.min.js"></script>
+    <script src="https://tonejs.github.io/CDN/latest/Tone.js"></script>
+
+    <!-- control scripts -->
+    <script src="scripts/controls/pointerlock.js"></script>
+    <script src="scripts/controls/firstpersoncontrols.js"></script>
+
+    <!-- environment scripts -->
+    <script src="scripts/environment/generatemap.js"></script>
+    <script src="scripts/environment/synth.js"></script>
+    <script src="scripts/environment/sequencer.js"></script>
+    <script src="scripts/environment/interfaceelements.js"></script>
+    <script src="scripts/environment/interface.js"></script>
+
+    <!-- main script -->
+    <script src="scripts/SOS.js"></script>
+</body>
+
+</html>
